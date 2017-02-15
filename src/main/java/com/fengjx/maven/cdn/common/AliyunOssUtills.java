@@ -148,6 +148,7 @@ public final class AliyunOssUtills {
 
     /**
      * 查询文件列表每次最多查询100条
+     * @return 文件刘表对象
      */
     public static ObjectListing listObjects() {
         ListObjectsRequest request = new ListObjectsRequest();
@@ -159,8 +160,8 @@ public final class AliyunOssUtills {
     /**
      * 查询文件列表每次最多查询100条
      *
-     * @param prefix
-     * @return
+     * @param prefix 路径前缀
+     * @return 文件刘表对象
      */
     public static ObjectListing listObjects(String prefix) {
         ListObjectsRequest request = new ListObjectsRequest();
