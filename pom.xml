@@ -4,10 +4,47 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
     <groupId>com.fengjx.maven.cdn</groupId>
     <artifactId>maven-cdn-alioss-plugin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>maven-plugin</packaging>
+
+    <name>alioss</name>
+    <description>alioss is a maven plugin for upload cdn files to aliyun-oss</description>
+    <url>http://maven.fengjx.com/plugin/alioss</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>tech-microworld</name>
+        <url>https://github.com/tech-microworld</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>FengJianxin</name>
+            <email>fengjianxin2012@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:tech-microworld/maven-cdn-alioss-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:tech-microworld/maven-cdn-alioss-plugin.git</developerConnection>
+        <url>https://github.com/tech-microworld/maven-cdn-alioss-plugin</url>
+    </scm>
+
+
 
     <!-- Properties -->
     <properties>
@@ -104,7 +141,7 @@
                     <useDefaultMapping>true</useDefaultMapping>
                     <properties>
                         <year>2016 - 2017</year>
-                        <devTeam>fengjx.com</devTeam>
+                        <devTeam>tech-microworld</devTeam>
                     </properties>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
